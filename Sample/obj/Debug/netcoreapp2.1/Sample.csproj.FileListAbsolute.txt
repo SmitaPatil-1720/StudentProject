@@ -1,0 +1,66 @@
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.deps.json
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.runtimeconfig.json
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.runtimeconfig.dev.json
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.dll
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.pdb
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.Views.dll
+C:\Users\Smita Patil\source\repos\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.Views.pdb
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csprojAssemblyReference.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csproj.CoreCompileInputs.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorAssemblyInfo.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorAssemblyInfo.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.AssemblyInfoInputs.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.AssemblyInfo.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.TagHelpers.input.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.TagHelpers.output.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorCoreGenerate.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorTargetAssemblyInfo.cache
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorTargetAssemblyInfo.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.Views.pdb
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.dll
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.pdb
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csproj.CopyComplete
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Student\StudentAdd.g.cshtml.cs
+C:\Users\Smita Patil\source\repos\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Student\DisplayStudents.g.cshtml.cs
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.deps.json
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.runtimeconfig.json
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.runtimeconfig.dev.json
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.dll
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.pdb
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.Views.dll
+C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.Views.pdb
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csprojAssemblyReference.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csproj.CoreCompileInputs.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorAssemblyInfo.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorAssemblyInfo.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.AssemblyInfoInputs.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.AssemblyInfo.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.TagHelpers.input.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.TagHelpers.output.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorCoreGenerate.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorTargetAssemblyInfo.cache
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorTargetAssemblyInfo.cs
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.Views.pdb
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.dll
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.pdb
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csproj.CopyComplete
