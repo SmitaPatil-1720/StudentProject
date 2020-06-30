@@ -1,0 +1,51 @@
+    
+    
+    <form [formGroup]="StudObj.formStudentGroup">
+    
+    <table align="center">
+        <tr>
+            <td>Student Id:</td>
+            <td><input [ngModelOptions]="{standalone: true}"
+                type="text" [(ngModel)]="StudObj.Id" value=""></td>
+        </tr>
+        <tr>
+        <td>Student Name:</td>
+        <td><input formControlName="namecontrol" 
+            type="text" [(ngModel)]="StudObj.Name" value=""></td>
+    </tr>
+ 
+    <div [hidden]="!(StudObj.formStudentGroup.controls['namecontrol'].hasError('required'))">
+        Name is required</div><br>
+
+        <tr>
+       <td> Student Address:</td>
+       <td><input formControlName="addresscontrol"
+        type="text" [(ngModel)]="StudObj.Address" value=""></td>
+    </tr>
+
+    <div [hidden]="!(StudObj.formStudentGroup.controls['addresscontrol'].hasError('required'))">
+        Address is required</div><br>
+
+
+    <br>
+        <input id="button" [disabled]="!StudObj.formStudentGroup.valid" type="button"
+         (click)="submit()" value="Add"><br>
+    
+    <br>
+    </table>
+    </form>
+
+    <table align="center" border="2">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+
+        <tr *ngFor="let Stud of StudentObjs">
+            <td>{{Stud.Id}}</td>
+            <td>{{Stud.Name}}</td>
+            <td>{{Stud.Address}}</td>
+        </tr>
+        
+    </table>

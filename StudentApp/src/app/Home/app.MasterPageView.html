@@ -1,0 +1,52 @@
+
+<style>
+li{
+   display: inline; 
+   margin-left:50px;
+   
+}
+
+a{
+    text-decoration:none;
+}
+.header{
+color:darkblue;
+font-size: 30px;
+background:rgb(255, 0, 85);
+padding:3px;
+margin: 0px;
+}
+
+.header img{
+    float:left;
+    width:100px;
+    height:97px;
+
+}
+
+a:hover
+{
+    color: aliceblue;
+}
+.sky{
+      background-color: tan;
+      padding:10px;
+      height:530px;
+      
+    }
+
+</style>
+<div class="header">
+    <img src="assets/download.jpg"/>
+<ul>
+    <li><a [routerLink]="['Home']">Home</a></li>
+    <li><a [routerLink]="['Student/New']">Student</a></li>
+   
+    <li><a [routerLink]="['SearchStudent/Search']">Search Student</a></li>
+
+</ul>
+</div>
+
+<div class="sky">
+    <router-outlet></router-outlet>
+</div>

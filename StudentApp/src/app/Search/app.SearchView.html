@@ -1,0 +1,22 @@
+<table align="center">
+    <tr>
+    <td>Enter Student Name :</td> 
+    <td> <input type="text" [(ngModel)]="studentName" id=""></td>
+    </tr>
+<input type="button" (click)="search()" value="Search"><br>
+</table>
+
+<table align="center" border="2">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Address</td>
+    </tr>
+
+    <tr *ngFor="let Stud of studentModels">
+        <td>{{Stud.Id}}</td>
+        <td>{{Stud.Name}}</td>
+        <td>{{Stud.Address}}</td>
+    </tr>
+    
+</table>
