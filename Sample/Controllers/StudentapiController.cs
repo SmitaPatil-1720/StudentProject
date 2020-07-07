@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -11,13 +12,13 @@ using Sample.Models;
 
 namespace Sample.Controllers
 {
+    //step3:Use authorize attribute
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class StudentapiController : ControllerBase
     {
        
-        // GET: api/Studentapi
-      
         // GET: api/Studentapi/5
         [HttpGet]
         public IActionResult Get(string studentName)

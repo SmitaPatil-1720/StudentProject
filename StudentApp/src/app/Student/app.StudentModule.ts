@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import{FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import{RouterModule}from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StudentComponent } from './app.StudentComponent';
 import { StudentRoutes } from './app.StudentRouting';
 import { CommonModule } from '@angular/common';
+import { MyJwtInterceptor } from '../Utilities/Utilities.Interceptor';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { CommonModule } from '@angular/common';
     RouterModule.forChild(StudentRoutes),
     HttpClientModule
     ],
-  providers: [],
+  providers: [
+    {provide:HTTP_INTERCEPTORS,useClass: MyJwtInterceptor,multi:true}
+  ],
   bootstrap: [StudentComponent]
 })
 export class StudentModule { }

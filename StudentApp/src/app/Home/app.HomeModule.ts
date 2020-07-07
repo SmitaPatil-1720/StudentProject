@@ -2,17 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import {RouterModule} from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomeComponent } from './app.HomeComponent';
 import { MasterComponent } from './app.MasterComponent';
 import { MaintRoutes } from './app.MainRouting';
+import { LoginComponent } from './app.LoginComponent';
+import { User } from './app.LoginModel';
+import { SecurityLogic } from '../Utilities/Utilities.AuthGuard';
+import { MyJwtInterceptor } from '../Utilities/Utilities.Interceptor';
 
 
 @NgModule({
   declarations: [
   
     HomeComponent,
-    
+    LoginComponent,
     MasterComponent
   ],
   imports: [
@@ -20,7 +24,8 @@ import { MaintRoutes } from './app.MainRouting';
     RouterModule.forRoot(MaintRoutes),
     HttpClientModule
     ],
-  providers: [],
+  providers: [User,SecurityLogic,
+    {provide:HTTP_INTERCEPTORS,useClass: MyJwtInterceptor,multi:true}],
   bootstrap: [MasterComponent]
 })
 export class HomeModule { }
