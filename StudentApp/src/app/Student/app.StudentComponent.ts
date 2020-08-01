@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import{ HttpClient } from '@angular/common/http'
-import { StudentModel } from './app.StudentModel';
+import { StudentModel, StudentAddress } from './app.StudentModel';
 
 @Component({
   selector:'app-root',
@@ -10,17 +10,24 @@ import { StudentModel } from './app.StudentModel';
 export class StudentComponent {
 
   StudObj=new StudentModel();
+  studentAddress:StudentAddress = new StudentAddress();
  StudentObjs:Array<StudentModel> = new Array<StudentModel>();
  
   constructor(public httpobj:HttpClient){
     
   }
 
+  AddAddress(){
+    this.StudObj.StudentAddresses.push(this.studentAddress);
+    this.studentAddress = new StudentAddress();
+  }
+
 submit(){
   var studDto:any={};
   studDto.Id=this.StudObj.Id;
   studDto.Name=this.StudObj.Name;
-  studDto.Address=this.StudObj.Address;
+  studDto.addresses = [];
+  studDto.addresses = this.StudObj.StudentAddresses;
   this.httpobj.post("https://localhost:44310/api/Studentapi"
   ,studDto)
   .subscribe(res=>this.Success(res),

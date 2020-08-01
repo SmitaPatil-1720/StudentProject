@@ -1,5 +1,5 @@
 export class User{
-    userName:string = "";
-    password:string = "";
+    public userName:string = "";
+    public password:string = "";
     token:string="";
 }

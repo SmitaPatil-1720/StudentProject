@@ -7,10 +7,15 @@ import { SecurityLogic } from '../Utilities/Utilities.AuthGuard';
 
 
 
+
 export const MaintRoutes=[
     {path:'',component:HomeComponent,canActivate:[SecurityLogic]},
     {path:'Home',component:HomeComponent,canActivate:[SecurityLogic]},
     {path:'Login',component:LoginComponent},
+
+    {path:'Registration', loadChildren: () => import('../Register/app.RegisterModule')
+    .then(m => m.RegisterModule)},
+    
     {path:'Student', loadChildren: () => import('../Student/app.StudentModule')
     .then(m => m.StudentModule),canActivate:[SecurityLogic]},
     {path:'SearchStudent', loadChildren: () => import('../Search/app.SearchModule').

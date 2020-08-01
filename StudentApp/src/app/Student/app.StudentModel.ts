@@ -9,8 +9,8 @@ FormBuilder
 export class StudentModel{
      Id:number=0;
      Name:string="";
-     Address:string="";
-
+     StudentAddresses:Array<StudentAddress>= new Array<StudentAddress>();
+    
      formStudentGroup:FormGroup=null;
      constructor(){
           //tree structure
@@ -25,4 +25,10 @@ export class StudentModel{
           new FormControl('',Validators.required));
 
      }
+}
+
+export class StudentAddress{
+     Id:number=0;
+     Address:string="";
+
 }

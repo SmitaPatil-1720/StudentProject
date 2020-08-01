@@ -1,0 +1,48 @@
+<form [formGroup]="regObj.formRegisterGroup">
+
+  <table align="center">
+
+<tr>
+  <td>First Name:</td>
+   <td> <input formControlName="fnamecontrol"  type="text" [(ngModel)]="regObj.FirstName" id=""></td>
+</tr><br>
+  
+<div [hidden]="!(regObj.formRegisterGroup.controls['fnamecontrol'].hasError('required'))">
+  <p style="color: blue;">  First Name is required </p></div>
+
+ <tr> 
+<td>Last Name:</td>
+ <td> <input formControlName="lnamecontrol"  type="text" [(ngModel)]="regObj.LastName" id=""></td>
+</tr><br>
+<div [hidden]="!(regObj.formRegisterGroup.controls['lnamecontrol'].hasError('required'))">
+  <p style="color: blue;">  Last Name is required </p></div>
+
+<tr>
+<td>Email:</td>
+<td><input formControlName="emailcontrol"  type="text" [(ngModel)]="regObj.Email" id=""></td>
+</tr>
+<br>
+<div [hidden]="!(regObj.formRegisterGroup.controls['emailcontrol'].hasError('required'))">
+  <p style="color: blue;"> Email is required </p></div>
+
+  <tr>
+<td>Username:</td>
+ <td><input formControlName="usernamecontrol"  type="text" [(ngModel)]="regObj.userName" id=""></td>
+</tr>
+<br>
+<div [hidden]="!(regObj.formRegisterGroup.controls['usernamecontrol'].hasError('required'))">
+  <p style="color: blue;">  UserName is required</p></div>
+
+   <tr>
+<td>Password:</td>
+ <td><input formControlName="passwordcontrol"  type="password" [(ngModel)]="regObj.password" id=""></td>
+</tr>
+
+
+<div [hidden]="!(regObj.formRegisterGroup.controls['passwordcontrol'].hasError('required'))">
+ <p style="color: blue;"> Password is required</p></div><br>
+
+<input type="button" value="Sign In" (click)="SignIn()"> <br>
+
+</table>
+</form>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Models
 {
-    public class StudentModel
+    public class Student
     {
         public int Id { get; set; }
 
@@ -14,7 +14,13 @@ namespace Sample.Models
         [RegularExpression("^[a-z]{1,10}$")]
         public string Name { get; set; }
 
+        public List<Address> addresses { get; set; }
+    }
+    public class Address
+    {
+        public int id { get; set; }
         [Required]
-        public string Address { get; set; }
+        public string address { get; set; }
+        public Student student { get; set; }
     }
 }

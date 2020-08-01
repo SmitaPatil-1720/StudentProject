@@ -39,7 +39,6 @@ C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.dll
 C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.pdb
 C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.Views.dll
 C:\MVC\Sample\Sample\bin\Debug\netcoreapp2.1\Sample.Views.pdb
-C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csprojAssemblyReference.cache
 C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csproj.CoreCompileInputs.cache
 C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorAssemblyInfo.cache
 C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.RazorAssemblyInfo.cs
@@ -64,3 +63,4 @@ C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.Views.pdb
 C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.dll
 C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.pdb
 C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csproj.CopyComplete
+C:\MVC\Sample\Sample\obj\Debug\netcoreapp2.1\Sample.csprojAssemblyReference.cache

@@ -18,23 +18,30 @@ namespace Sample.Controllers
     [ApiController]
     public class StudentapiController : ControllerBase
     {
+        string constr = "";
+        StudentDal dal = null;
+        public StudentapiController(IConfiguration configuration , StudentDal _dal)
+        {
+            constr = configuration["ConnStr"];
+            dal = _dal;
+        }
        
         // GET: api/Studentapi/5
         [HttpGet]
         public IActionResult Get(string studentName)
         {
-            StudentDal dal = new StudentDal();
-            List<StudentModel> search = (from temp in dal.StudentModels
+            StudentDal dal = new StudentDal(constr);
+            List<Student> search = (from temp in dal.StudentModels
                                          where temp.Name == studentName
                                          select temp)
-                                         .ToList<StudentModel>();
+                                         .ToList<Student>();
             return Ok(search);
           
         }
 
         // POST: api/Studentapi
         [HttpPost]
-        public IActionResult Post(StudentModel obj)
+        public IActionResult Post(Student obj)
         {
             var context = new ValidationContext(obj, null, null);
             //fill the errors 
@@ -43,12 +50,15 @@ namespace Sample.Controllers
 
             if (result.Count == 0)
             {
-                StudentDal dal = new StudentDal();
-                dal.Database.EnsureCreated(); //tblStudent created
+
+                //StudentDal dal = new StudentDal(constr);
+
+               //dal.Database.EnsureCreated(); //tblStudent created
                 dal.Add(obj);//adds in memory
+                
                 dal.SaveChanges();  //physical commit
 
-                List<StudentModel> recs = dal.StudentModels.ToList<StudentModel>();
+                List<Student> recs = dal.StudentModels.ToList<Student>();
 
                 return Ok(recs); //200(success)
             }

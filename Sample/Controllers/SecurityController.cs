@@ -7,16 +7,28 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Sample.DAL;
 using Sample.Models;
+using static Microsoft.AspNetCore.Hosting.Internal.HostingApplication;
 
 namespace Sample.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class SecurityController : ControllerBase
     {
-   
+        string constr = "";
+
+        public SecurityController(IConfiguration configuration)
+        {
+            constr = configuration["ConnStr"];
+
+        }
+
 
         private string GenerateKey(string userName)
         {
@@ -35,7 +47,7 @@ namespace Sample.Controllers
             var token = new JwtSecurityToken("FinishingSchool",
                 "FinishingSchool",
                 claims,
-                expires: DateTime.Now.AddMinutes(3000),
+                expires: DateTime.Now.AddMinutes(120),
                 signingCredentials: credentials);
 
             string tokenstring = new JwtSecurityTokenHandler().WriteToken(token);
@@ -43,27 +55,69 @@ namespace Sample.Controllers
 
         }
 
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value1", "value2" };
+        }
+
+
         // GET: api/Security/5
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
         {
-            return "value";
-        }
+           return "value";
+       }
 
         // POST: api/Security
-        [HttpPost]
-        public IActionResult Post([FromBody] User obj)
+       [HttpPost]
+       public IActionResult Post([FromBody] User Obj)  
         {
-            if((obj.userName=="smita") && (obj.password == "pass@123")){
-                obj.token = GenerateKey(obj.userName);
-                obj.password = "";
-                return Ok(obj);
-            }
-            else
+            StudentDal dal = new StudentDal();
+            if (ModelState.IsValid)  
             {
-                return StatusCode(401, "Not a proper user");
-            }
+                using (var DbContext = new StudentDal())
+                {
+                    List<Registration> user = (from temp in dal.RegisterModels
+                                                 .Where(temp => temp.userName == Obj.userName
+                                               && temp.password == Obj.password)
+                                            select temp)
+                                        .ToList<Registration>();
+
+                    if (user != null)
+                    {
+                        Obj.token = GenerateKey(Obj.userName);
+                        Obj.password = "";
+                        return Ok(Obj);
+
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid User Name or Password");
+                        return Ok(Obj);
+                    }
+                }  
+            }  
+            else  
+            {
+                return Ok(Obj);
+            }  
         }
+
+       
+
+        /*public IActionResult Post([FromBody] User obj)
+         {
+             if((obj.userName=="smita") && (obj.password == "pass@123")){
+                 obj.token = GenerateKey(obj.userName);
+                 obj.password = "";
+                 return Ok(obj);
+             }
+             else
+             {
+                 return StatusCode(401, "Not a proper user");
+             }
+         }*/
 
         // PUT: api/Security/5
         [HttpPut("{id}")]
